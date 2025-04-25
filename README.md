@@ -1,35 +1,66 @@
-# Owncloud Recu
-# Manual d'Instal·lació d’ownCloud amb IsardVDI
+# 📂 Pràctica 2 - Gestors d'Arxius Web
 
-## 1. Instal·lació d’IsardVDI
+## 🧠 Sobre aquesta pràctica
 
-### Requisits previs
-- Sistema operatiu host: Ubuntu Server 20.04
-- Accés a internet
-- Privilegis de superusuari (sudo)
+Aquesta pràctica forma part de l’assignatura i tracta sobre com configurar un sistema de gestió d’arxius al núvol utilitzant **ownCloud** i una màquina virtual creada amb **IsardVDI**. El principal objectiu és entendre com funcionen aquests sistemes, aprendre a instal·lar-los, configurar-los i provar com es poden utilitzar per compartir fitxers entre diferents usuaris i dispositius.
 
-### Passos
-1. **Actualització del sistema**
-    ```bash
-    sudo apt update && sudo apt upgrade
-    ```
+---
 
-2. **Descàrrega i instal·lació d’IsardVDI**
-    [Enllaç oficial d’instal·lació: https://docs.isardvdi.com]
+## 🗃️ Contingut del projecte
 
-    *(Afegeix aquí les captures de pantalla de cada pas)*
+A la carpeta trobaràs els següents fitxers:
 
-3. **Creació d’una màquina virtual**
-    - Nom: `ownCloudVM`
-    - Sistema operatiu: Ubuntu 20.04
-    - Recursos: 2 vCPU, 4GB RAM, 20GB disc
+| Fitxer              | Descripció                                                                 |
+|---------------------|----------------------------------------------------------------------------|
+| `INSTALLATION.md`   | Manual pas a pas per instal·lar IsardVDI, crear la màquina virtual i posar ownCloud. |
+| `CONFIGURATION.md`  | Guia amb la configuració d'usuaris, permisos, compartició i proves d'ús.   |
+| `README.md`         | Aquest fitxer, amb una vista general del projecte.                         |
 
-## 2. Instal·lació d’ownCloud
+---
 
-### 1. Instal·la Apache, PHP i MariaDB
+## 🛠️ Tecnologies utilitzades
+
+- 💻 **IsardVDI** – Per virtualitzar el sistema.
+- ☁️ **ownCloud** – El gestor d’arxius que s’ha instal·lat.
+- 🐧 **Ubuntu Server 22.04** – El sistema operatiu de la màquina virtual.
+- 🔧 **Apache** + **MariaDB** – Per fer funcionar ownCloud al servidor web.
+- 🖥️ **Client local** – Per accedir al sistema ownCloud remotament.
+
+---
+
+## 📷 Captures de pantalla
+
+Tant a l’`INSTALLATION.md` com al `CONFIGURATION.md` hi he posat captures per veure tot el procés. Des de la instal·lació fins a les proves de compartir arxius amb rols diferents.
+
+---
+
+## ✅ Què s’ha fet
+
+- Instal·lació d’una màquina virtual amb IsardVDI.
+- Instal·lació completa d’ownCloud amb Apache i MariaDB.
+- Creació de 3 usuaris amb rols diferents: admin, editor i visualitzador.
+- Proves de pujar fitxers, crear carpetes i compartir contingut.
+- Configuració d’enllaços amb caducitat i accés remot des d’altres dispositius.
+
+---
+
+## ⚠️ Observacions / Problemes
+
+- Algun petit problema amb la xarxa de la màquina virtual (no pillava IP), però ho vaig solucionar posant-la en mode "Bridged".
+- El rendiment d’ownCloud dins la VM no és súper ràpid, però funciona prou bé per les proves.
+- En accedir des d’un altre dispositiu, cal assegurar-se que el tallafocs no bloquegi el port 80.
+
+---
+
+## 🔄 Extra (opcional)
+
+Tot i que no era obligatori, vaig intentar configurar l'accés a ownCloud des de la meva màquina principal i també provar la connexió a altres núvols (companys de classe), però només ho vaig provar en local.
+
+---
+
+## 📦 Format d'entrega
+
+El projecte està comprimit en un fitxer `.zip` amb el següent format:
+
 ```bash
-sudo apt install apache2 mariadb-server libapache2-mod-php php php-mysql php-xml php-curl php-zip php-mbstring php-gd php-intl unzip wget
-
-![imatge](https://github.com/user-attachments/assets/c3a1f340-56ce-485a-a944-118edfa24fa2)
-![imatge](https://github.com/user-attachments/assets/468083fc-5976-40d1-ae9f-770a92a2ed62)
-
+NOM-COGNOM-PT2.zip
