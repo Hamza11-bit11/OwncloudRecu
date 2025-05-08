@@ -171,3 +171,10 @@ La informació que heu de posar (si no heu modificat la informació del manual) 
 * **contrasenya:** password
 * **base de dades:** bbdd
 * **domini:** localhost
+
+
+
+
+![imatge](https://github.com/user-attachments/assets/f3b3de4b-a468-4604-93e4-42bee8f3ccc9)
+![imatge](https://github.com/user-attachments/assets/f5fcfd4a-64d1-4e3e-919d-66934b8dd2bf)
+![imatge](https://github.com/user-attachments/assets/5e4e7da9-8e24-4476-a640-2f030dd5d956)
