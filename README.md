@@ -174,6 +174,7 @@ La informació que heu de posar (si no heu modificat la informació del manual) 
 
 
 
+![Uploading imatge.png…]()
 
 ![imatge](https://github.com/user-attachments/assets/f3b3de4b-a468-4604-93e4-42bee8f3ccc9)
 ![imatge](https://github.com/user-attachments/assets/f5fcfd4a-64d1-4e3e-919d-66934b8dd2bf)
