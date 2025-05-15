@@ -186,9 +186,69 @@ La informació que heu de posar (si no heu modificat la informació del manual) 
 * **domini:** localhost
 
 
+# 🌥️ ownCloud - Demostración de Funcionamiento
 
+Este repositorio documenta la demostración práctica del uso básico de **ownCloud** como plataforma de almacenamiento, colaboración y gestión de usuarios.
+
+---
+
+## ✅ Demostración del Funcionamiento
+
+### 🔗 Compartir Contenidos
+- Seleccionar un archivo o carpeta.
+- Hacer clic en **"Compartir"**.
+- Opciones disponibles:
+  - Compartir con usuarios internos.
+  - Crear enlace público con permisos configurables (lectura, escritura, fecha de expiración, contraseña).
+- Verificar el acceso desde otra cuenta.
+
+- ### 🔒 Pasos para compartir con caducidad:
+1. Seleccionar un archivo o carpeta.
+2. Clic en el icono de **"Compartir"**.
+3. Activar la opción **"Compartir enlace público"**.
+4. Configurar:
+   - ✅ Permisos (lectura, edición, subida).
+   - 📆 **Fecha de caducidad** (obligatoria para mayor seguridad).
+   - 🔑 Contraseña (opcional pero recomendable).
+5. Copiar el enlace generado y enviarlo al destinatario.
+6. Verificar que, tras la fecha establecida, el enlace deja de estar activo automáticamente.
 ![imatge](https://github.com/user-attachments/assets/ecb61ef0-b55f-4ae7-a114-5da40579b2da)
+### 📁 Creación de Carpetas
+- Desde el botón **"+"**, seleccionar **"folder"**.
+- Añade la carpeta
 
 ![imatge](https://github.com/user-attachments/assets/f3b3de4b-a468-4604-93e4-42bee8f3ccc9)
+
+## 👤 Creación de Usuarios
+
+Se han creado tres usuarios con distintos roles y permisos:
+
+| Usuario   | Grupo           | Rol           |
+|-----------|------------------|----------------|
+| `admin`  | administradores  | Administrador  |
+| `editor` | editores         | Editor         |
+| `visualizador` | visualitzadors   | Visualizador   |
+
+### 🔧 Proceso de Creación
+1. Iniciar sesión como administrador.
+2. Ir a **Configuración > Usuarios**.
+3. Clic en **"Crear nuevo usuario"**.
+4. Introducir nombre de usuario, contraseña y grupo asignado.
+
+---
+
+## 🔐 Asignación de Roles y Permisos
+
+### 📜 Permisos por Rol
+- **Administrador**: acceso total, gestión de configuración y usuarios.
+- **Editor**: puede subir, editar y eliminar archivos.
+- **Visualizador**: solo puede visualizar y descargar.
+
+### 🧪 Prueba de Accesos
+1. Compartir una carpeta con cada usuario con diferentes permisos.
+2. Verificar:
+   - El editor puede modificar archivos.
+   - El visualizador solo puede leerlos.
+
 ![imatge](https://github.com/user-attachments/assets/f5fcfd4a-64d1-4e3e-919d-66934b8dd2bf)
 ![imatge](https://github.com/user-attachments/assets/5e4e7da9-8e24-4476-a640-2f030dd5d956)
