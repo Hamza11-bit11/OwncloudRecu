@@ -92,12 +92,12 @@ Busquem la línia següent:
 ```console
 bind-address = 127.0.0.1
 ```
+![imatge](https://github.com/user-attachments/assets/6b07f688-250a-4b24-b9ef-24d927a1aa5d)
 
 Hem de canviar el `bind-address` per `0.0.0.0` i la línia ha de quedar així:
 ```console
 bind-address = 0.0.0.0
 ```
-![imatge](https://github.com/user-attachments/assets/6b07f688-250a-4b24-b9ef-24d927a1aa5d)
 ![imatge](https://github.com/user-attachments/assets/885666fe-4f3b-4fdd-b00e-82e4f38723e6)
 
 ### Reiniciem el servidor
