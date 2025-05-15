@@ -86,6 +86,7 @@ Permetem l'accés des de qualsevol equip a la nostra base de dades. Editem l'arx
 ```console
 vim /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
+![imatge](https://github.com/user-attachments/assets/fd240b56-5fc8-421f-9415-3a2bb8a92674)
 
 Busquem la línia següent:
 ```console
@@ -96,11 +97,21 @@ Hem de canviar el `bind-address` per `0.0.0.0` i la línia ha de quedar així:
 ```console
 bind-address = 0.0.0.0
 ```
+![imatge](https://github.com/user-attachments/assets/6b07f688-250a-4b24-b9ef-24d927a1aa5d)
+![imatge](https://github.com/user-attachments/assets/885666fe-4f3b-4fdd-b00e-82e4f38723e6)
 
 ### Reiniciem el servidor
 ```console
 systemctl restart mysql
 ```
+![imatge](https://github.com/user-attachments/assets/2905c8fb-342d-433a-a962-759c69c6b6c5)
+
+
+### 🌐 Configuración de Acceso a la Nube para 2 Usuarios
+
+#### 📁 Archivo Modificado
+Se ha editado el archivo de configuración:
+
 
 ### Creació d'un usuari per a accedir des d'una màquina remota
 Per accedir des d'una màquina remota, hauriem de crear un usuari nou identificat pel nom d'usuari i la IP de la màquina des de la qual accedirà.
@@ -119,6 +130,8 @@ GRANT ALL ON bbdd.* to 'usuario'@'192.168.22.100';
 ```console
 exit
 ```
+![imatge](https://github.com/user-attachments/assets/dc48fbb5-89c7-46de-8d8f-6c1183f1a666)
+
 
 ## Descarreguem els fitxers de l'aplicació web
 Anem al directori `/var/www/html` i descomprimim allà els fitxers de l'aplicació web, heu de substituir `app-web.zip` per el nom del vostre fitxer que heu descarregat amb l'aplicació web i el nom de la carpeta `app-web` per la carpeta que us ha creat, si la vostra instal·lació de linux està en un idioma diferent al català, no tindreu la carpeta `Baixades`, modifiqueu la comanda per adaptarla a les vostrs necessitats.
